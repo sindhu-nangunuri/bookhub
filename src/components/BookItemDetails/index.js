@@ -108,7 +108,6 @@ class BookItemDetails extends Component {
       readStatus,
       aboutAuthor,
       title,
-      id,
     } = bookDetails
 
     return (
@@ -117,9 +116,7 @@ class BookItemDetails extends Component {
           <div className="details">
             <img src={coverPic} alt={title} className="book-details-image" />
             <div className="container1">
-              <h1 className="book-title" key={title}>
-                {title}
-              </h1>
+              <h1 className="book-title">{title}</h1>
               <p className="book-details-author-name">{authorName}</p>
               <div className="book-details-rating-container">
                 <p className="book-details-avg-rating-heading">Avg rating</p>

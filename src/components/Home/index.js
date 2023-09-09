@@ -23,7 +23,7 @@ const settings = {
   infinite: true,
   autoplay: true,
   slidesToScroll: 1,
-  slidesToShow: 3,
+  slidesToShow: 4,
   responsive: [
     {
       breakpoint: 1024,
@@ -34,6 +34,13 @@ const settings = {
     },
     {
       breakpoint: 786,
+      settings: {
+        slidesToScroll: 1,
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 514,
       settings: {
         slidesToScroll: 1,
         slidesToShow: 1,
@@ -119,8 +126,12 @@ class Home extends Component {
                     alt={title}
                   />
                 </div>
-                <h1 className="top-rated-book-name">{title}</h1>
-                <p className="top-rated-book-author">{authorName}</p>
+                <h1 className="top-rated-book-name" key={title}>
+                  {title}
+                </h1>
+                <p className="top-rated-book-author" key={authorName}>
+                  {authorName}
+                </p>
               </button>
             </div>
           )

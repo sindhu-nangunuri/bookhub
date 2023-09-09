@@ -12,7 +12,7 @@ const BookItem = props => {
   }
 
   const {bookDetails} = props
-  const {id, title, readStatus, rating, authorName, coverPic} = bookDetails
+  const {title, readStatus, rating, authorName, coverPic} = bookDetails
 
   return (
     <li className="book-item-list-container">

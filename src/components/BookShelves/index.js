@@ -132,7 +132,7 @@ class BookShelves extends Component {
           alt="no books"
         />
         <p className="no-match-paragraph">
-          Your search for {searchInput} did not find any matches
+          Your search for {searchInput} did not find any matches.
         </p>
       </div>
     )
@@ -253,6 +253,53 @@ class BookShelves extends Component {
 
             <div>{this.renderBooks()}</div>
           </div>
+        </div>
+        <div className="bookShelves-small-container">
+          <div className="search-input-container ">
+            <input
+              type="search"
+              className="search-container"
+              placeholder="Search"
+              onChange={this.onChangeInput}
+              value={searchInput}
+            />
+            <button
+              className="search-btn"
+              onClick={this.onSearchBooks}
+              type="button"
+              testid="searchButton"
+            >
+              <BsSearch className="search-icon" />
+            </button>
+          </div>
+          <h1 className="bookshelves-heading">Bookshelves</h1>
+          <ul className="filter-small-container">
+            {bookshelvesList.map(eachItem => {
+              const activeFilterClass =
+                activeFilter === eachItem.value ? 'active-filter-sm' : ''
+              const onClickedFilter = () => {
+                this.setState(
+                  {
+                    activeFilter: eachItem.value,
+                    activeFilterLabel: eachItem.label,
+                  },
+                  this.getBooksApiData,
+                )
+              }
+              return (
+                <li className="list-item-sm" key={eachItem.label}>
+                  <button
+                    type="button"
+                    onClick={onClickedFilter}
+                    className={`list-item-btn  ${activeFilterClass}`}
+                  >
+                    {eachItem.label}
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+          <div>{this.renderBooks()}</div>
         </div>
 
         <Footer />

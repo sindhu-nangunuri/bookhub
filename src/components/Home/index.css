@@ -56,14 +56,11 @@
     border: none;
   }
   .top-rated-book-image-container {
+    margin-left: 25px;
   }
   .top-rated-book-image {
-    height: 200px;
-    width: 180px;
-
-    background-size: cover;
-    margin: 25px;
-    padding-right: 5px;
+    height: 150px;
+    width: 150px;
   }
   .top-rated-book-name {
     font-family: 'Roboto';
@@ -79,17 +76,20 @@
 
 @media screen and (min-width: 787px) {
   .top-rated-book-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
   .top-rated-card-btn {
     background-color: transparent;
     border: none;
   }
 
   .top-rated-book-image {
-    height: 350px;
-    width: 350px;
-    background-size: cover;
-    margin-top: 5px;
+    height: 190px;
+    width: 190px;
   }
   .top-rated-book-name {
     font-family: 'Roboto';
@@ -125,4 +125,16 @@
   color: #ffffff;
   padding: 5px;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 514px) {
+  .top-rated-book-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-rated-card-btn {
+    padding: 30px;
+  }
 }
