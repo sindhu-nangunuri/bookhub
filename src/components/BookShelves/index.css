@@ -1,0 +1,168 @@
+@media screen and (min-width: 787px) {
+  .book-shelves-bg-container-lg {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(212, 217, 219);
+    padding: 30px;
+  }
+  .book-shelves-filter-container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    width: 20%;
+    border-radius: 5px;
+    height: 100vh;
+  }
+  .bookshelves-heading-lg {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+  }
+  .filter-un-order-list-container {
+    list-style-type: none;
+  }
+  .active-filter-list-lg {
+    border: none;
+    margin-top: 10px;
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 0px;
+    padding: 0px;
+    align-items: center;
+    color: rgb(69, 74, 75);
+  }
+  .active-filter-lg {
+    color: #0284c7;
+  }
+  .large-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .filtered-books-search-input-container-lg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    padding: 15px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 10px;
+    height: 10vh;
+  }
+  .search-input-container {
+  }
+  .search-input {
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+    margin-left: 35px;
+    border: none;
+    outline: none;
+  }
+  .search-btn {
+    height: 31px;
+    width: 30px;
+    border: none;
+  }
+  .search-icon {
+    color: black;
+  }
+
+  .bookList-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 800px;
+    justify-content: space-between;
+  }
+  .loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bookShelves-small-container {
+    display: none;
+  }
+}
+.no-match-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 786px) {
+  .book-shelves-bg-container-lg {
+    display: none;
+  }
+  .bookShelves-small-container {
+    background-color: rgb(217, 222, 226);
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    align-items: flex-start;
+
+    padding-left: 20px;
+  }
+  .search-input-container {
+    border: 1px solid grey;
+  }
+  .search-container {
+    height: 30px;
+
+    padding: 8px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+  .search-btn {
+    height: 30px;
+    width: 40px;
+    border: none;
+  }
+  .search-icon {
+    width: 15px;
+  }
+  .bookshelves-heading {
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .filter-small-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    flex-wrap: wrap;
+  }
+  .list-item-sm {
+    list-style-type: none;
+    border: 2px solid #0284c7;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    height: 28px;
+    padding: 5;
+  }
+  .list-item-btn {
+    border: none;
+    background-color: transparent;
+    color: #0284c7;
+  }
+
+  .active-filter-sm {
+    background-color: #0284c7;
+    color: #ffffff;
+    height: 26px;
+    border-radius: 40px;
+    padding: 5px;
+  }
+  .bookList-container {
+    padding: 0px;
+  }
+}
